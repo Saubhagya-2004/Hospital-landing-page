@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: uppercase;
+    transition: all linear .2s;
+    text-decoration: none;
+    font-family: "Roboto",'san-serif';
+}
+:root{
+    --blue:#0188df;
+    --black:#444d53;
+    --wight:#fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header{
+    width: 96%;
+    background: var(--wight);
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50% );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+header a{
+    color: var(--black);
+}
+header a:hover{
+    color: #67f8f8;
+}
+header .logo{
+    font-size: 2.5rem;
+}
+header .logo span{
+    color: #67f8f8;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style: none;
+
+}
+header .navbar ul li{
+    margin: 0 1.5rem;
+    font-size: 2rem;
+}
+header .navbar ul li a{
+    color: var(--black);
+}
+header .navbar ul li a:hover{
+    color: #0394f5;
+}
+header .fa-bars{
+    color: #018deb;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+header .fa-times{
+    transform: rotate(90deg);
+}
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        /* left: -100rem ; */
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: #707172;
+        opacity: 0;
+        /* transition: margin-top 2s ease-in-out .2s green; */
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+        background-color: #707172;
+    }
+    header .navbar ul li a{
+        font-size: 3rem;
+        display: block;
+        color: black;
+    }
+    header .navbar ul li a:hover{
+        color: aqua;
+    }
+    header .nav-links{
+        top: 1.5rem;
+        opacity: 1;
+        text-align: center;
+        transition-duration: 0.3s;
+        
+    }
+}
