@@ -155,8 +155,65 @@ header .fa-times{
     text-align: start;
     margin-bottom: 1rem;
     text-align: justify;
+    letter-spacing: 0.1rem;
 }
-
+.about .box-container .box:nth-child(even){
+    flex-flow: row-reverse;
+}
+/* doctor */
+.card .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card .box-container .box{
+    width: 30rem;
+    margin: 2rem 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+}
+.card .box-container .box:hover{
+    box-shadow: 0.3rem 0.2rem 5rem aqua;
+    margin-top: .7rem;
+    border-radius: .7rem;
+}
+.card .box-container .box img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+.card .box-container .box .content{
+    padding: 1rem 1.2rem;
+}
+.card .box-container .box .content h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #181b1c;
+}
+.card .box-container .box .content h2:hover{
+    color: #0188df;
+    text-decoration: dotted underline;
+}
+.card .box-container .box .content p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--black);
+    margin: 0.2rem;
+    text-transform: uppercase;
+}
+.card .box-container .box .content p:hover{
+    color:#181b1c;
+}
+/* icons */
+.card .box-container .box .content .icons{
+    text-align: center;
+}
+.card .box-container .box .content .icons a{
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: var(--blue);
+}
 /* button */
 .button{
     height: 3rem;
@@ -196,7 +253,7 @@ header .fa-times{
     font-size: 2.5rem;
     padding: 0 1rem;
     text-align: center;
-    color: #444d53;
+    color: #33393d;
  }
 @media(max-width:768px){
     html{
@@ -255,4 +312,19 @@ header .fa-times{
     .home .row .content p{
         text-align: justify;
     }
+    .about .box-container .box{
+        flex-flow: column;
+        width: 90%;
+    }
+    .about .box-container .box:nth-child(even){
+        flex-flow: column;
+    }
+    .about .box-container .box .images{
+        width: 100%;
+    }
+    .about .box-container .box .content{
+        width: 100%;
+    }
+    
+    
 }
