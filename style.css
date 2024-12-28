@@ -355,6 +355,59 @@ resize: none;
     margin-top: .7rem;
     border-radius: 2.1rem;
 }
+.footer{
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.footer .box{
+    width: 30rem;
+    margin: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.footer .box:nth-child(1){
+    text-align: left;
+}
+.footer .box .logo{
+    padding: 2rem 0;
+    font-size: 2.8rem;
+    color: #f9f9f9;
+}
+.footer .box .logo:hover{
+    color: var(--blue);
+}
+.footer .box .logo span{
+    color: #0188df;
+}
+.footer .box p{
+    font-size: 1.5rem;
+    color: var(--wight);
+}
+.footer .box a{
+    color:var(--wight);
+    font-size: 2rem;
+    display: block;
+    padding: .2rem 0;
+}
+.footer .box a:hover{
+    color: #67f8f8;
+    text-decoration:  dotted underline;
+}
+.footer .bar{
+    width: 85%;
+    border-top: .2rem solid var(--wight);
+    font-size: 1.9rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: aliceblue;
+}
+#heart{
+    font-size: 2rem;
+    color: rgb(219, 48, 48);
+}
 /* button */
 .button{
     height: 3rem;
